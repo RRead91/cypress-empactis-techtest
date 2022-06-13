@@ -1,0 +1,11 @@
+{
+    "baseUrl": "https://empactis-qa-test.azurewebsites.net/",
+    "browser": "chrome",
+    "pluginsFile": "./cypress/plugins/index.js",
+    "video": false,
+    "screenshotsFolder": "cypress/artifacts/screenshots",
+    "trashAssetsBeforeRuns": true,
+    "chromeWebSecurity": false,
+    "testFiles": "**/*.{feature,features}",
+    "viewportHeight": 1000
+}

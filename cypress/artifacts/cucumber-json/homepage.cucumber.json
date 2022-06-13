@@ -1,0 +1,121 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to create a new cohort\n    So that I can view the data related to my cohort",
+    "keyword": "Feature",
+    "name": "Create Cohort",
+    "line": 1,
+    "id": "create-cohort",
+    "tags": [],
+    "uri": "homepage.feature",
+    "elements": [
+      {
+        "id": "create-cohort;users-can-select-a-top-hero",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Users can select a top hero",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the tour of heroes homepage",
+            "result": {
+              "status": "passed",
+              "duration": 565000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I select a top hero",
+            "result": {
+              "status": "passed",
+              "duration": 617000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I am taken to the heroes page",
+            "result": {
+              "status": "passed",
+              "duration": 472000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-cohort;users-can-search-for-a-hero",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Users can search for a hero",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the tour of heroes homepage",
+            "result": {
+              "status": "passed",
+              "duration": 340000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I search for Dr nice",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I am taken to the heroes page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "create-cohort;users-can-clear-messages",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Users can clear messages",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the tour of heroes homepage",
+            "result": {
+              "status": "passed",
+              "duration": 261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I select a top hero",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
