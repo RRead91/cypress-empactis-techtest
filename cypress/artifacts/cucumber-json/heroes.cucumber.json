@@ -1,0 +1,100 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to create a new cohort\n    So that I can view the data related to my cohort",
+    "keyword": "Feature",
+    "name": "Heroes Page",
+    "line": 1,
+    "id": "heroes-page",
+    "tags": [],
+    "uri": "heroes.feature",
+    "elements": [
+      {
+        "id": "heroes-page;create-a-hero",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Create a hero",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the tour of heroes Heroes page",
+            "result": {
+              "status": "passed",
+              "duration": 462000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I enter a name for a new hero",
+            "result": {
+              "status": "passed",
+              "duration": 345000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click on Add hero",
+            "result": {
+              "status": "undefined",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I can see the new hero is added to the list",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "heroes-page;delete-a-hero",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Delete a hero",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the tour of heroes Heroes page",
+            "result": {
+              "status": "passed",
+              "duration": 357000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click on  the X next to a hero",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I can see the hero is removed from the list",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

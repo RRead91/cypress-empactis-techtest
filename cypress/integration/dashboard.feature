@@ -1,10 +1,10 @@
-Feature: Create Cohort
+Feature: Dashboard Page
     As a user
     I want to be able to create a new cohort
     So that I can view the data related to my cohort
 
     Background:
-        Given I am on the tour of heroes homepage
+        Given I am on the tour of heroes dashboard
 
     Scenario: Users can select a top hero
         When I select a top hero
@@ -22,5 +22,7 @@ Feature: Create Cohort
 
     Scenario: Users can clear messages
         Given I select a top hero
-        And I navigate to the Dashboard page
-        And 
+        When I navigate to the Dashboard page
+        Then I can see there are log messages recorded
+        When I clear the log messages
+        Then I can see there are no log messages recorded

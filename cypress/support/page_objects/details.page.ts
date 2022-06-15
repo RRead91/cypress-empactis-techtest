@@ -1,5 +1,5 @@
 import faker from "faker"
-import context from "../context/context"
+import basePage from "./base.page"
 
 const SELECTORS = {
     HERO: {
@@ -7,7 +7,7 @@ const SELECTORS = {
     }
 }
 
-class detailsPage {
+class detailsPage extends basePage {
     get editName() {
         return cy.get(SELECTORS.HERO.NAME)
     }
@@ -20,7 +20,6 @@ class detailsPage {
         this.editName.clear()
         this.editName.type(faker.random.word())
     }
-
 }
 
 export default new detailsPage()

@@ -1,27 +1,14 @@
 import faker from "faker"
 import context from "../context/context"
+import basePage from "./base.page"
 
 const SELECTORS = {
-    DASHBOARD: '[routerlink="/dashboard"]',
-    HEROES: '[routerlink="/heroes"]',
     TOP_HEROES: ".heroes-menu",
     SEARCH_HEROES: "#search-box",
-    SEARCH_RESULT: "li > a",
-    MESSAGE_LOG: {
-        CLEAR: ".clear",
-        LIST: ".app-messages"
-    }
+    SEARCH_RESULT: "li > a"
 }
 
-class homePage {
-    get dashboard() {
-        return cy.get(SELECTORS.DASHBOARD)
-    }
-
-    get heroes() {
-        return cy.get(SELECTORS.HEROES)
-    }
-
+class homePage extends basePage {
     get topHeroes() {
         return cy.get(SELECTORS.TOP_HEROES)
     }
@@ -32,26 +19,6 @@ class homePage {
 
     get searchResult() {
         return cy.get(SELECTORS.SEARCH_RESULT)
-    }
-
-    get clearMessages() {
-        return cy.get(SELECTORS.MESSAGE_LOG.CLEAR)
-    }
-
-    get MessageList() {
-        return cy.get(SELECTORS.MESSAGE_LOG.LIST)
-    }
-
-    open() {
-        cy.visit("")
-    }
-
-    navigateToDashboard() {
-        this.dashboard.click()
-    }
-
-    navigateToHeroes() {
-        this.heroes.click()
     }
 
     selectRandomTopHero() {
@@ -66,6 +33,21 @@ class homePage {
     searchHero(hero: string) {
         this.searchHeroes.type(hero)
         this.searchResult.click()
+    }
+
+    clearLogMessages() {
+        this.topHeroes.should('be.visible')
+        this.clearMessages.click()
+    }
+
+    assertLogMessages(state: boolean) {
+        if(state === true) {
+            //If true, messages are visible
+            this.MessageList.children().should('have.length.above', 0)
+        } else {
+             //If false, no messages are visible
+            this.MessageList.should('not.exist')
+        }
     }
 }
 

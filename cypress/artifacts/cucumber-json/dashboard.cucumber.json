@@ -2,14 +2,14 @@
   {
     "description": "    As a user\n    I want to be able to create a new cohort\n    So that I can view the data related to my cohort",
     "keyword": "Feature",
-    "name": "Create Cohort",
+    "name": "Dashboard Page",
     "line": 1,
-    "id": "create-cohort",
+    "id": "dashboard-page",
     "tags": [],
     "uri": "dashboard.feature",
     "elements": [
       {
-        "id": "create-cohort;users-can-select-a-top-hero",
+        "id": "dashboard-page;users-can-select-a-top-hero",
         "keyword": "Scenario",
         "line": 9,
         "name": "Users can select a top hero",
@@ -20,10 +20,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I am on the tour of heroes homepage",
+            "name": "I am on the tour of heroes dashboard",
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 289000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I select a top hero",
             "result": {
               "status": "passed",
-              "duration": 643000000
+              "duration": 610000000
             }
           },
           {
@@ -43,13 +43,13 @@
             "name": "I am taken to the heroes page",
             "result": {
               "status": "passed",
-              "duration": 471000000
+              "duration": 470000000
             }
           }
         ]
       },
       {
-        "id": "create-cohort;users-can-search-for-a-hero",
+        "id": "dashboard-page;users-can-search-for-a-hero",
         "keyword": "Scenario",
         "line": 19,
         "name": "Users can search for a hero",
@@ -60,10 +60,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I am on the tour of heroes homepage",
+            "name": "I am on the tour of heroes dashboard",
             "result": {
               "status": "passed",
-              "duration": 250000000
+              "duration": 214000000
             }
           },
           {
@@ -71,46 +71,6 @@
             "keyword": "When ",
             "line": 14,
             "name": "I search for Dr. Nice",
-            "result": {
-              "status": "passed",
-              "duration": 1124000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I am taken to the heroes page",
-            "result": {
-              "status": "passed",
-              "duration": 466000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "create-cohort;users-can-search-for-a-hero",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Users can search for a hero",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am on the tour of heroes homepage",
-            "result": {
-              "status": "passed",
-              "duration": 182000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I search for Magneta",
             "result": {
               "status": "passed",
               "duration": 1080000000
@@ -123,13 +83,53 @@
             "name": "I am taken to the heroes page",
             "result": {
               "status": "passed",
-              "duration": 462000000
+              "duration": 475000000
             }
           }
         ]
       },
       {
-        "id": "create-cohort;users-can-search-for-a-hero",
+        "id": "dashboard-page;users-can-search-for-a-hero",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Users can search for a hero",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the tour of heroes dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I search for Magneta",
+            "result": {
+              "status": "passed",
+              "duration": 1060000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I am taken to the heroes page",
+            "result": {
+              "status": "passed",
+              "duration": 476000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "dashboard-page;users-can-search-for-a-hero",
         "keyword": "Scenario",
         "line": 21,
         "name": "Users can search for a hero",
@@ -140,10 +140,10 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I am on the tour of heroes homepage",
+            "name": "I am on the tour of heroes dashboard",
             "result": {
               "status": "passed",
-              "duration": 177000000
+              "duration": 202000000
             }
           },
           {
@@ -153,7 +153,7 @@
             "name": "I search for Magma",
             "result": {
               "status": "passed",
-              "duration": 1056000000
+              "duration": 1038000000
             }
           },
           {
@@ -163,13 +163,13 @@
             "name": "I am taken to the heroes page",
             "result": {
               "status": "passed",
-              "duration": 464000000
+              "duration": 476000000
             }
           }
         ]
       },
       {
-        "id": "create-cohort;users-can-clear-messages",
+        "id": "dashboard-page;users-can-clear-messages",
         "keyword": "Scenario",
         "line": 23,
         "name": "Users can clear messages",
@@ -180,20 +180,60 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I am on the tour of heroes homepage",
+            "name": "I am on the tour of heroes dashboard",
             "result": {
               "status": "passed",
-              "duration": 241000000
+              "duration": 180000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I select a top hero",
+            "result": {
+              "status": "passed",
+              "duration": 629000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
-            "name": "I select a top hero",
+            "line": 25,
+            "name": "I navigate to the Dashboard page",
             "result": {
               "status": "passed",
-              "duration": 623000000
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I can see there are log messages recorded",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I clear the log messages",
+            "result": {
+              "status": "passed",
+              "duration": 524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I can see there are no log messages recorded",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
             }
           }
         ]

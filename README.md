@@ -1,8 +1,8 @@
-## cypress-empactis-techtest
+# cypress-empactis-techtest
 
-This repo contains a technical test demonstration of Cypress
+This repo contains a technical test demonstration of Cypress using the 
 
-# Setup
+## Setup
 
 This project requires the following:
 
@@ -13,7 +13,7 @@ To install dependancies:
 
 yarn install
 
-# Running the tests
+## Running the tests
 
 To run the tests in headless:
 
