@@ -8,9 +8,9 @@ Feature: Heroes Page
 
     Scenario: Create a hero
         Given I enter a name for a new hero
-        When I click on Add hero
+        When I click on Add hero button
         Then I can see the new hero is added to the list
 
     Scenario: Delete a hero
-        When I click on  the X next to a hero
+        When I click on the delete hero button
         Then I can see the hero is removed from the list

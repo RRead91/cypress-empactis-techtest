@@ -1,4 +1,3 @@
-let hero
 let _hero: string
 
 class Context {
@@ -6,7 +5,7 @@ class Context {
     return _hero
   }
 
-  sethero(hero: string) {
+  sethero(hero) {
     _hero = hero
   }
 }

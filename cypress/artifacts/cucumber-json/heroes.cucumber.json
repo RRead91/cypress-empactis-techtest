@@ -9,55 +9,6 @@
     "uri": "heroes.feature",
     "elements": [
       {
-        "id": "heroes-page;create-a-hero",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Create a hero",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am on the tour of heroes Heroes page",
-            "result": {
-              "status": "passed",
-              "duration": 462000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I enter a name for a new hero",
-            "result": {
-              "status": "passed",
-              "duration": 345000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I click on Add hero",
-            "result": {
-              "status": "undefined",
-              "duration": 15000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "I can see the new hero is added to the list",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
         "id": "heroes-page;delete-a-hero",
         "keyword": "Scenario",
         "line": 14,
@@ -72,16 +23,17 @@
             "name": "I am on the tour of heroes Heroes page",
             "result": {
               "status": "passed",
-              "duration": 357000000
+              "duration": 1393000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 15,
-            "name": "I click on  the X next to a hero",
+            "name": "I click on the delete hero button",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 579000000
             }
           },
           {
@@ -90,7 +42,8 @@
             "line": 16,
             "name": "I can see the hero is removed from the list",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1053000000
             }
           }
         ]

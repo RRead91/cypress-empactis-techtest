@@ -9,7 +9,7 @@ const SELECTORS = {
     },
     HERO_LIST: {
         NUMBER: '.badge',
-        NAME: '',//No ideal selection method here, currently using the number selector to find the parent
+        NAME: 'a',//No ideal selection method here, currently using the number selector to find the parent
         DELETE: '.delete'
     }
 }
@@ -23,6 +23,26 @@ class heroPage extends basePage {
         return cy.get(SELECTORS.NEW_HERO.SAVE)
     }
 
+    get heroBadge() {
+        return cy.get(SELECTORS.HERO_LIST.NUMBER)
+    }
+
+    get heroName() {
+        return cy.get(SELECTORS.HERO_LIST.NAME)
+    }
+
+    get heroDelete() {
+        return cy.get(SELECTORS.HERO_LIST.DELETE)
+    }
+
+    getHeroById(id: number) {
+        return this.heroBadge.filter(':contains.(' + id + ')').parent()
+    }
+
+    getHeroByName(name: string) {
+        return this.heroName.filter(':contains.(' + name + ')').parent()
+    }
+
     enterNewHeroName(){
         let name = "Captain " + faker.name.lastName()
         context.sethero(name)
@@ -33,8 +53,20 @@ class heroPage extends basePage {
         this.saveNewHeroButton.click()
     }
 
+    deleteFirstHero() {
+        this.heroDelete.should('be.visible')
+        this.heroName.eq(2).parent().children().eq(0).invoke('text').then((name) => {context.sethero(name)})
+        this.heroDelete.first().click()
+    }
+
     heroIsVisible() {
-        this
+        cy.wait(1000) //NOT IDEAL!
+        this.heroName.filter(':contains(' + context.gethero() + ')').should('be.visible')
+    }
+
+    heroIsNotVisible() {
+        cy.wait(1000) //NOT IDEAL!
+        this.heroName.filter(':contains(' + context.gethero() + ')').should('not.exist')
     }
 }
 

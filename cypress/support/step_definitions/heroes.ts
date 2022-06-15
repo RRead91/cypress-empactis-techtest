@@ -15,13 +15,13 @@ When(/^I click on Add hero button$/, () => {
 })
 
 When(/^I click on the delete hero button$/, () => {
-    
+    heroesPage.deleteFirstHero()    
 })
  
 Then(/^I can see the new hero is added to the list$/, () => {
-    heroesPage.heroIsVisible(true)
+    heroesPage.heroIsVisible()
 })
 
 Then(/^I can see the hero is removed from the list$/, () => {
-    
+    heroesPage.heroIsNotVisible()
 })
