@@ -6,13 +6,13 @@
     "line": 1,
     "id": "heroes-page",
     "tags": [],
-    "uri": "heroes.feature",
+    "uri": "details.feature",
     "elements": [
       {
-        "id": "heroes-page;create-a-hero",
+        "id": "heroes-page;change-hero-name",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "Create a hero",
+        "line": 10,
+        "name": "Change hero name",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,80 +20,70 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I am on the tour of heroes Heroes page",
+            "name": "I am on the tour of heroes dashboard",
             "result": {
               "status": "passed",
-              "duration": 12450000000
+              "duration": 8726000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I enter a name for a new hero",
+            "keyword": "And ",
+            "line": 8,
+            "name": "I select a top hero",
             "result": {
               "status": "passed",
-              "duration": 310000000
+              "duration": 624000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "I click on Add hero button",
+            "name": "I change the name",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 757000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "I can see the new hero is added to the list",
+            "name": "I can see the hero's name has been changed",
             "result": {
               "status": "passed",
-              "duration": 1044000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "heroes-page;delete-a-hero",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Delete a hero",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I am on the tour of heroes Heroes page",
-            "result": {
-              "status": "passed",
-              "duration": 276000000
+              "duration": 14000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
-            "name": "I click on the delete hero button",
+            "line": 13,
+            "name": "I click on Save",
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 1068000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I navigate to the Heroes page",
+            "result": {
+              "status": "passed",
+              "duration": 81000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
-            "name": "I can see the hero is removed from the list",
+            "line": 15,
+            "name": "I can see the new hero is added to the list",
             "result": {
               "status": "passed",
-              "duration": 1051000000
+              "duration": 1141000000
             }
           }
         ]

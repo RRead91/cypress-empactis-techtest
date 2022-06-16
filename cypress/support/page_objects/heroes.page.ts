@@ -45,7 +45,7 @@ class heroPage extends basePage {
 
     enterNewHeroName(){
         let name = "Captain " + faker.name.lastName()
-        context.sethero(name)
+        context.setHero(name)
         this.newHeroNameField.type(name)
     }
 
@@ -55,18 +55,18 @@ class heroPage extends basePage {
 
     deleteFirstHero() {
         this.heroDelete.should('be.visible')
-        this.heroName.eq(2).parent().children().eq(0).invoke('text').then((name) => {context.sethero(name)})
+        this.heroName.eq(2).parent().children().eq(0).invoke('text').then((name) => {context.setHero(name)}) //This could use a more direct selector!
         this.heroDelete.first().click()
     }
 
     heroIsVisible() {
         cy.wait(1000) //NOT IDEAL!
-        this.heroName.filter(':contains(' + context.gethero() + ')').should('be.visible')
+        this.heroName.filter(':contains(' + context.getHero() + ')').should('be.visible')
     }
 
     heroIsNotVisible() {
         cy.wait(1000) //NOT IDEAL!
-        this.heroName.filter(':contains(' + context.gethero() + ')').should('not.exist')
+        this.heroName.filter(':contains(' + context.getHero() + ')').should('not.exist')
     }
 }
 

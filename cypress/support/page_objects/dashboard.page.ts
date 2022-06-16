@@ -21,12 +21,16 @@ class homePage extends basePage {
         return cy.get(SELECTORS.SEARCH_RESULT)
     }
 
+    assertPage(){
+        this.topHeroes.should('be.visible')
+    }
+
     selectRandomTopHero() {
         let rng = faker.datatype.number({'min':0, 'max': 3})
         this.topHeroes.should('be.visible')
         let randomHero = this.topHeroes.children().eq(rng)
         // let randomHero = this.topHeroes.eq()
-        context.sethero(randomHero.invoke('text').toString())
+        context.setHero(randomHero.invoke('text').toString())
         this.topHeroes.children().eq(rng).click()
     }
 

@@ -1,11 +1,11 @@
 let _hero: string
 
 class Context {
-  gethero(): string {
+  getHero(): string {
     return _hero
   }
 
-  sethero(hero) {
+  setHero(hero: string) {
     _hero = hero
   }
 }
