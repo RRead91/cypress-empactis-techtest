@@ -1,6 +1,6 @@
 # cypress-empactis-techtest
 
-This repo contains a technical test demonstration of Cypress using the 
+This repo contains a technical test demonstration of Cypress 
 
 ## Setup
 
@@ -22,4 +22,3 @@ yarn test
 To run the tests using the Cypress GUI:
 
 yarn start
-
